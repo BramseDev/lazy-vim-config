@@ -87,6 +87,14 @@ vim.keymap.set("n", "<M-q>", "<C-w>c", { desc = "Fenster schließen" })
 
 
 
+-- Tabulator für Einrückung im Normal- und Einfügemodus
+vim.keymap.set("i", "<Tab>", "<Tab>", { noremap = true, silent = true })
+vim.keymap.set("i", "<S-Tab>", "<C-d>", { noremap = true, silent = true })
+
+-- Optional für Visual Mode
+vim.keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
+
 
 
 
