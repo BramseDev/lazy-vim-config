@@ -12,6 +12,16 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.opt.expandtab = true       -- Tabs werden in Leerzeichen umgewandelt
+vim.opt.shiftwidth = 4         -- Anzahl der Leerzeichen für Einrückungen
+vim.opt.tabstop = 4            -- Anzahl der Leerzeichen, die ein Tab darstellt
+vim.opt.softtabstop = 4        -- Gleiche Anzahl beim Bearbeiten von Tabs
+vim.opt.smarttab = true        -- Kontextabhängige Tabulatorfunktion
+vim.opt.autoindent = true      -- Automatische Einrückung
+vim.opt.smartindent = true 
+
+
+
 -- Fixes Notify opacity issues
 vim.o.termguicolors = true
 
